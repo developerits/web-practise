@@ -17,7 +17,7 @@ gulp.task("server", function () {
 gulp.task("styles", function () {
   // Создаем таск "sass"
   return gulp
-    .src("src/sass/*.+(scss|sass)") // Берем источник
+    .src("src/sass/**/*.+(scss|sass)") // Берем источник
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
     .pipe(
       rename({
@@ -32,7 +32,7 @@ gulp.task("styles", function () {
 });
 
 gulp.task("watch", function () {
-  gulp.watch("src/sass/*.+(scss|sass)", gulp.parallel("styles"));
+  gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel("styles"));
   gulp.watch("src/*.html").on("change", browserSync.reload);
 });
 
