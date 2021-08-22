@@ -4,6 +4,12 @@
       align-items: center;
     }
   }
+  .title {
+    &_left {
+      font-size: 30px;
+      line-height: 39px;
+    }
+  }
 }
 
 @media (max-width: 629px) {
@@ -55,6 +61,17 @@
     }
     &__text {
       margin-top: 10px;
+    }
+  }
+  .title {
+    &_left {
+      font-size: 21px;
+    }
+  }
+  .consultation {
+    padding-left: 7px;
+    &__descr {
+      font-size: 18px;
     }
   }
 }
