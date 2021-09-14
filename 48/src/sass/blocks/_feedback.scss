@@ -1,0 +1,42 @@
+.feedback {
+  padding: 0 0 48px;
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0d0d0d;
+  }
+}
+
+.feedback-item {
+  margin-top: 60px;
+  display: flex;
+  align-items: flex-start;
+  img {
+    margin-right: 60px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0d0d0d;
+  }
+  &__subsubtitle {
+    font-weight: 500;
+    font-size: 14px;
+    color: #646464;
+  }
+  &__descr {
+    font-weight: 300;
+    font-size: 16px;
+    color: #0d0d0d;
+    margin-top: 10px;
+  }
+}
