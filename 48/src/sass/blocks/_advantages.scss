@@ -2,6 +2,37 @@
   min-height: 433px;
   padding: 73px 0 65px 0;
   background: #f6f6f6;
+
+  &__img {
+    &_animated1 {
+      animation-name: cup;
+      animation-duration: 4s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+    &_animated2 {
+      animation-name: heartbeat;
+      animation-duration: 1.4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+    &_animated3 {
+      animation-name: shoe;
+      animation-duration: 1.4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+
   &__title {
     font-weight: 700;
     font-size: 30px;

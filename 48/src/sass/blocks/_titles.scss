@@ -4,6 +4,10 @@
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  &_normal {
+    font-weight: 500;
+    margin-bottom: 46px;
+  }
   &_left {
     color: white;
     font-size: 36px;
