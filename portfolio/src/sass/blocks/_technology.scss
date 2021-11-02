@@ -1,0 +1,43 @@
+.technology {
+  padding-top: 126px;
+  position: relative;
+  &__title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    @include before_circle;
+    &::before {
+      left: 12px;
+    }
+  }
+
+  &__subtitle {
+    padding-top: 32px;
+    margin-bottom: 0;
+  }
+
+  &__wrapper {
+    display: grid;
+    margin-top: 60px;
+    grid-template: repeat(2, minmax(270px, auto)) / repeat(
+        4,
+        minmax(270px, auto)
+      );
+    grid-gap: 13px;
+  }
+
+  &__item {
+    border: 1px solid;
+    &-img {
+      padding: 30px 0 20px 30px;
+    }
+
+    &-title {
+      margin-left: 30px;
+    }
+
+    &-text {
+      margin: 15px 29px 25px 30px;
+    }
+  }
+}

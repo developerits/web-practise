@@ -1,0 +1,21 @@
+.skill-card {
+  display: flex;
+  &__descr {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    margin-top: 6px;
+  }
+
+  &__circle {
+    margin-right: 24px;
+    padding: 15px 0 0 15px;
+    @include before_circle;
+    position: relative;
+    z-index: 1;
+    &::before {
+      top: 0;
+    }
+  }
+}
