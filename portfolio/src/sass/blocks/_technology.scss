@@ -1,20 +1,6 @@
 .technology {
   padding-top: 126px;
   position: relative;
-  &__title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    @include before_circle;
-    &::before {
-      left: 12px;
-    }
-  }
-
-  &__subtitle {
-    padding-top: 32px;
-    margin-bottom: 0;
-  }
 
   &__wrapper {
     display: grid;
@@ -39,5 +25,53 @@
     &-text {
       margin: 15px 29px 25px 30px;
     }
+  }
+
+  &__progress-wrapper {
+    margin-top: 120px;
+    display: grid;
+    grid-template: repeat(2, 70px) / repeat(3, 350px);
+    row-gap: 30px;
+    column-gap: 45px;
+  }
+
+  &__progress-subwrapper {
+    display: grid;
+    grid-template: 21px 14px / 200px 35px;
+    justify-content: space-between;
+    align-content: space-between;
+    position: relative;
+  }
+
+  &__progress-title {
+    @include before_circle;
+    &::before {
+      top: -12%;
+      left: -12px;
+    }
+    // padding-left: 14px;
+    // padding-top: 8px;
+  }
+
+  &__progress-text {
+    order: 1;
+    // text-align: right;
+    // padding-top: 8px;
+    // font-weight: 500;
+  }
+
+  &__progress-light-grey {
+    order: 2;
+    width: 350px;
+    height: 14px;
+    background: #e8e4de;
+    border-radius: 4px;
+    grid-column: 1/3;
+  }
+
+  &__progress-orange {
+    background: $main-color;
+    height: 100%;
+    border-radius: 4px;
   }
 }
