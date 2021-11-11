@@ -654,7 +654,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <!-- <section class="portfolio">
       <div class="container">
         <h2
           class="
@@ -691,9 +691,9 @@
           /></a>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="price">
+    <!-- <section class="price">
       <div class="container">
         <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
         <div class="divider divider_center divider_mt25"></div>
@@ -744,9 +744,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="contacts">
+    <!-- <section class="contacts">
       <div class="container">
         <div class="contacts__wrapper">
           <div class="contacts__photo">
@@ -774,30 +774,56 @@
               <div class="title title_fz14 contacts__text">
                 Или оставьте ваши данные и я сама вам напишу:
               </div>
-              <form action="#" class="contacts__form">
+              <form action="#" class="contacts__form" method="get">
                 <div class="contacts__input">
-                  <input type="text" id="name" class="title_fz12" />
+                  <input
+                    required
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="title_fz12"
+                  />
                   <label for="name" class="title_fz12">Ваше имя</label>
                 </div>
                 <div class="contacts__input">
-                  <input type="email" id="email" class="title_fz12" />
+                  <input
+                    required
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="title_fz12"
+                  />
                   <label for="email" class="title_fz12">Ваша почта</label>
                 </div>
                 <div class="contacts__textarea title_fz12">
-                  <textarea name="text" id="text" cols="30" rows="6"></textarea>
+                  <textarea
+                    name="text"
+                    name="text"
+                    id="text"
+                    cols="30"
+                    rows="6"
+                  ></textarea>
                   <label for="text" class="title_fz12">Ваше сообщение</label>
                 </div>
-                <div>
+                <div class="contacts__triggers">
                   <button class="contacts__btn btn title title_fz14">
                     Отправить сообщение
                   </button>
+                  <div class="contacts__policy title_fz12">
+                    <input required type="checkbox" name="policy" id="" />
+                    <span
+                      >Я согласен(а) с
+                      <a href="/policy.html">политикой конфиденциальности</a>
+                    </span>
+                  </div>
                 </div>
               </form>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
     <script src="js/script.js"></script>
   </body>
 </html>

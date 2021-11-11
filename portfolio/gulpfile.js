@@ -6,6 +6,7 @@ const autoprefixer = require("gulp-autoprefixer");
 const rename = require("gulp-rename");
 const image = require("gulp-image");
 const htmlmin = require("gulp-htmlmin");
+const { reload } = require("browser-sync");
 
 gulp.task("server", function () {
   browserSync({
@@ -30,7 +31,8 @@ gulp.task("styles", function () {
 
 gulp.task("watch", function () {
   gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel("styles"));
-  gulp.watch("src/*.html").on("change", gulp.parallel("html"));
+  gulp.watch("src/sass/**/*.+(scss|sass|css)").on("all", reload);
+  gulp.watch("src/*.html").on("change", gulp.parallel("html"), reload);
   gulp.watch("src/js/**/*.js").on("change", gulp.parallel("scripts"));
   gulp.watch("src/fonts/**/*").on("all", gulp.parallel("fonts"));
   gulp.watch("src/icons/**/*").on("all", gulp.parallel("icons"));
