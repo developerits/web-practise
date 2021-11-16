@@ -31,6 +31,7 @@
     margin-top: 120px;
     display: grid;
     grid-template: repeat(2, 70px) / repeat(3, 350px);
+    justify-content: space-between;
     row-gap: 30px;
     column-gap: 45px;
   }
