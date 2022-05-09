@@ -116,7 +116,6 @@ const modals = (state) => {
         document.documentElement.scrollHeight,
         document.body.scrollHeight
       );
-
       console.log(window.pageYOffset + document.documentElement.clientHeight);
       console.log(document.documentElement.scrollHeight);
 
