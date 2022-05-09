@@ -512,19 +512,8 @@ textarea:focus {
 .glazing .aluminum,
 .glazing .plastic,
 .glazing .french,
-.glazing .rise,
-.glazing .tree {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.glazing_content-wrapper {
-  overflow: hidden;
-  position: relative;
-  height: 724px;
+.glazing .rise {
+  display: none;
 }
 
 .glazing a.active {
@@ -738,13 +727,13 @@ textarea:focus {
 
 /* Timer */
 .timer1 {
-  padding: 10px;
+  padding: 8px;
   border: 1px solid grey;
   background-color: white;
   color: black;
   border-radius: 10px;
   text-align: center;
-  width: 360px;
+  max-width: 360px;
   height: 150px;
 }
 
@@ -1859,6 +1848,6 @@ textarea:focus {
   }
 }
 
-.glazing_warm img {
-  width: 80%;
+div.popup > img {
+  max-width: 70vw;
 }
